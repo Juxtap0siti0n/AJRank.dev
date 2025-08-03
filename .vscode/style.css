@@ -1,21 +1,41 @@
+/* Apply SVG as full-page background */
 body {
   margin: 0;
-  padding: 0;
-  font-family: "Times New Roman", serif;
+  font-family: Arial, sans-serif;
   background-image: url("layered-waves-haikei (1).svg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
-  height: 100vh;
-  color: white; /* optional: helps text stand out */
+  scroll-behavior: smooth;
+  padding-top: 60px; /* make space for fixed navbar */
 }
 
-.sampleButton {
+/* Nav bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar button {
   background-color: #f5276c;
-  color: black;
-  padding: 10px 20px;
   border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
   border-radius: 20px;
   cursor: pointer;
-  font-family: "Times New Roman", serif;
+  font-size: 16px;
+}
+
+section {
+  padding: 100px 20px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  min-height: 100vh;
 }

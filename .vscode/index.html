@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="This is an awesome website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aiden's Website</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h1>Aiden's Website</h1>
-    <p>This is my paragraph</p>
+    <nav class="navbar">
+      <button onclick="scrollToSection('home')">Home</button>
+      <button onclick="scrollToSection('about')">About</button>
+      <button onclick="scrollToSection('projects')">Projects</button>
+    </nav>
 
-    <a href="https://www.vcsilvercircuits.com/" target="_blank">
-      <button class="sampleButton" name="button">Press me</button>
-    </a>
+    <section id="home">
+      <h1>Welcome to Aiden's Website</h1>
+      <p>This is the home section.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This is the about section.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>This is the projects section.</p>
+    </section>
+
+    <script>
+      function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
   </body>
 </html>
