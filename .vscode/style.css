@@ -1,7 +1,7 @@
 /* Apply SVG as full-page background */
 body {
   margin: 0;
-  font-family: Arial, url(RobotoCondensed-Italic-VariableFont_wght.ttf);
+  font-family: Arial, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-image: url("layered-waves-haikei.svg");
   background-size: cover;
   background-repeat: no-repeat;
